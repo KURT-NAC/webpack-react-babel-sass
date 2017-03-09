@@ -18,5 +18,9 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/curteezie/webpack-react-babel-sass.git"
   }
 }
