@@ -6,3 +6,7 @@ todo:
 - ~~SASS~~
 - ~~webpack-dev-server~~
 - react-hot-loader
+
+
+### Inspired by:
+https://julienrenaux.fr/2015/03/30/introduction-to-webpack-with-practical-examples/
