@@ -1,18 +1,25 @@
 import React from 'react';
-import {render} from 'react-dom';
-import AwesomeComponent from './AwesomeComponent.jsx';
+import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader';
+import App from './containers/App';
 
-import style from './main.scss';
 
-class App extends React.Component {
-  render () {
-    return (
-      <div>
-        <p> Hello React!</p>
-        <AwesomeComponent />
-      </div>
+ReactDOM.render(
+  <AppContainer>
+    <App/>
+  </AppContainer>,
+  document.getElementById('root')
+);
+
+// Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept('./containers/App', () => {
+    const NextApp = require('./containers/App').default;
+    ReactDOM.render(
+      <AppContainer>
+        <NextApp/>
+      </AppContainer>,
+      document.getElementById('root')
     );
-  }
+  });
 }
-
-render(<App/>, document.getElementById('app'));
