@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch",
-    "build": "webpack -p" 
+    "build": "webpack -p"
   },
   "author": "",
   "license": "ISC",
@@ -15,12 +15,19 @@
     "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "extract-text-webpack-plugin": "^2.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/curteezie/webpack-react-babel-sass.git"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.4",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2"
   }
 }
